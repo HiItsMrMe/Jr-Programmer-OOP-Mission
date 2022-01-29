@@ -37,7 +37,7 @@ public class MainManager : MonoBehaviour
 
         if (Input.GetKeyDown(key) && !danceToggled)
         {
-            shape.dancing = !shape.dancing;
+            shape.isDancing = !shape.isDancing;
             danceToggled = true;
         }
         if (Input.GetKeyUp(key))

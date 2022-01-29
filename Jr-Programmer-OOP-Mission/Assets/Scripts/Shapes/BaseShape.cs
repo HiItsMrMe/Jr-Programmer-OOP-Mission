@@ -6,7 +6,7 @@ public abstract class BaseShape : MonoBehaviour
 {
 
     public float danceSpeed { get; protected set; } = 1f;
-    public bool dancing = true;
+    public bool isDancing = true;
 
     // needs to be set in child class instance
     protected Vector3 startPosition;
@@ -18,7 +18,7 @@ public abstract class BaseShape : MonoBehaviour
 
     protected virtual void Dance(float speed)
     {
-        if (dancing)
+        if (isDancing)
         {
             float x = MoveX(speed);
             float z = MoveZ(speed);

@@ -11,7 +11,7 @@ public class Cylinder : BaseShape
     }
     protected override void Dance(float speed)
     {
-        if (dancing)
+        if (isDancing)
         {
             MoveY();
         }
