@@ -5,7 +5,10 @@ using UnityEngine;
 public abstract class BaseShape : MonoBehaviour
 {
 
+    //ENCAPUSLATION START
     public float danceSpeed { get; protected set; } = 1f;
+    //ENCAPSULATION END
+
     public bool isDancing = true;
 
     // needs to be set in child class instance
@@ -16,6 +19,7 @@ public abstract class BaseShape : MonoBehaviour
         Dance(danceSpeed);
     }
 
+    //INHERITANCE START
     protected virtual void Dance(float speed)
     {
         if (isDancing)
@@ -25,6 +29,7 @@ public abstract class BaseShape : MonoBehaviour
             transform.position = startPosition + new Vector3(x, 0, z);
         }
     }
+    //INHERITANCE END
 
     //ABSTRACTION START
     private float MoveX(float speed)

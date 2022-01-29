@@ -7,13 +7,6 @@ public class MainManager : MonoBehaviour
 {
     public static float t;
 
-    [SerializeField]
-    private Cube cube;
-    [SerializeField]
-    private Cylinder cylinder;
-    [SerializeField]
-    private Sphere sphere;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -24,25 +17,7 @@ public class MainManager : MonoBehaviour
     void Update()
     {
         t += Time.deltaTime;
-
-        ToggleDance(KeyCode.A, cube);
-        ToggleDance(KeyCode.S, sphere);
-        ToggleDance(KeyCode.D, cylinder);
-
     }
 
-    private void ToggleDance(KeyCode key, BaseShape shape)
-    {
-        bool danceToggled = false;
 
-        if (Input.GetKeyDown(key) && !danceToggled)
-        {
-            shape.isDancing = !shape.isDancing;
-            danceToggled = true;
-        }
-        if (Input.GetKeyUp(key))
-        {
-            danceToggled = false;
-        }
-    }
 }

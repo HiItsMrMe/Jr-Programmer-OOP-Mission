@@ -9,6 +9,8 @@ public class Cylinder : BaseShape
     {
         startPosition = transform.position;
     }
+
+    //POLYMORPHISM START
     protected override void Dance(float speed)
     {
         if (isDancing)
@@ -16,6 +18,7 @@ public class Cylinder : BaseShape
             MoveY();
         }
     }
+    //POLYMORPHISM END
 
     private void MoveY()
     {

@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f53ae16c167074084f6afa9b012180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dancing: 1
+  isDancing: 1
 --- !u!1 &338528058
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 338528059}
   - component: {fileID: 338528060}
+  - component: {fileID: 338528061}
   m_Layer: 0
   m_Name: MainManager
   m_TagString: Untagged
@@ -184,6 +185,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea92dfffde1b434ab6a32679acef910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &338528061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338528058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137a0dd105d6bf044b1f8158f91dcc97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   cube: {fileID: 1500291220}
   cylinder: {fileID: 338570616}
   sphere: {fileID: 303498791}
@@ -204,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 137da4b6e4d981a4aa3c9ea3de4888a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dancing: 1
+  isDancing: 1
 --- !u!1 &445918901
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45c3606dadad484c9f199bba398dd82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dancing: 1
+  isDancing: 1
 --- !u!1001 &1872802407769447274
 PrefabInstance:
   m_ObjectHideFlags: 0
