@@ -22,6 +22,7 @@ public class PlayerInput : MonoBehaviour
         ToggleDance(KeyCode.D, cylinder);
     }
 
+    //ABSTRACTION START
     private void ToggleDance(KeyCode key, BaseShape shape)
     {
         bool danceToggled = false;
@@ -37,5 +38,6 @@ public class PlayerInput : MonoBehaviour
         {
             danceToggled = false;
         }
+        // ABSTRACTION END
     }
 }
