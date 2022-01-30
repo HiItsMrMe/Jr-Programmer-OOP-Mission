@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Cube : BaseShape
 {
-    private float danceSpeedSetting = 1f;
+    private float danceSpeedSetting = 1.5f;
 
-    private void Start()
+    protected override void Start()
     {
         danceSpeed = danceSpeedSetting;
-        startPosition = transform.position;
+
+        base.Start();
     }
 
 }

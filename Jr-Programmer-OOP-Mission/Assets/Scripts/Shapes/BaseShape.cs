@@ -9,10 +9,14 @@ public abstract class BaseShape : MonoBehaviour
     public float danceSpeed { get; protected set; } = 1f;
     //ENCAPSULATION END
 
-    public bool isDancing = true;
-
-    // needs to be set in child class instance
+    public bool isDancing = false;
     protected Vector3 startPosition;
+
+    protected virtual void Start()
+    {
+        startPosition = transform.position;
+        MainUIHandler.UIShapeList.Add(this);
+    }
 
     private void Update()
     {

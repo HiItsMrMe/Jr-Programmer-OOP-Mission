@@ -5,9 +5,10 @@ using UnityEngine;
 public class Cylinder : BaseShape
 {
 
-    private void Start()
+    protected override void Start()
     {
-        startPosition = transform.position;
+
+        base.Start();
     }
 
     //POLYMORPHISM START

@@ -11,6 +11,9 @@ public class PlayerInput : MonoBehaviour
     [SerializeField]
     private Sphere sphere;
 
+    public delegate void findFastestDancer();
+    public static event findFastestDancer onDancingChanges;
+
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +30,8 @@ public class PlayerInput : MonoBehaviour
         {
             shape.isDancing = !shape.isDancing;
             danceToggled = true;
+
+            onDancingChanges?.Invoke();
         }
         if (Input.GetKeyUp(key))
         {

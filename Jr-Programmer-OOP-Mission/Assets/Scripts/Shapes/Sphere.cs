@@ -6,10 +6,11 @@ public class Sphere : BaseShape
 {
     private float danceSpeedSetting = 5f;
 
-    private void Start()
+    protected override void Start()
     {
         danceSpeed = danceSpeedSetting;
-        startPosition = transform.position;
+
+        base.Start();
     }
 
     
